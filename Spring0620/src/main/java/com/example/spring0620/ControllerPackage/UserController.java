@@ -22,18 +22,18 @@ public class UserController {
         return userRepository.save(user);
     }
 
-    @GetMapping("/api/users")
+    @GetMapping("/api/read/{id}")
     public List<User> getUsers() {
         return userRepository.findAllByOrderByModifiedAtDesc();
     }
 
-    @PutMapping("/api/users/{id}")
+    @PutMapping("/api/update/{id}")
     public Long updateUSer(@PathVariable Long id, @RequestBody UserRequestDto requestDto) {
         userService.update(id, requestDto);
         return id;
     }
 
-    @DeleteMapping("/api/users/{id}")
+    @DeleteMapping("/api/delete/{id}")
     public Long deleteUser(@PathVariable Long id) {
         userRepository.deleteById(id);
         return id;
