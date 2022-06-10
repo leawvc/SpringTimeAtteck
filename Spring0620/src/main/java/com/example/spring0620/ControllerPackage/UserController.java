@@ -1,5 +1,7 @@
 package com.example.spring0620.ControllerPackage;
 
+
+import com.example.spring0620.domain.User;
 import com.example.spring0620.domain.UserRepository;
 import com.example.spring0620.domain.UserRequestDto;
 import com.example.spring0620.service.UserService;

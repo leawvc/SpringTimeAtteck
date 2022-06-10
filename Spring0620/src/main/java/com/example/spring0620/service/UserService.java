@@ -1,5 +1,6 @@
 package com.example.spring0620.service;
 
+import com.example.spring0620.domain.User;
 import com.example.spring0620.domain.UserRepository;
 import com.example.spring0620.domain.UserRequestDto;
 import lombok.RequiredArgsConstructor;
